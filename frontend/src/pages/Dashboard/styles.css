@@ -35,3 +35,30 @@ ul.spot-list li span {
     grid-template-columns: 1fr;
   }
 }
+
+ul.notifications {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+ul.notifications li {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+ul.notifications li button {
+  margin-right: 10px;
+  border: 0;
+  font-weight: bold;
+  margin-top: 10px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+ul.notifications li button.accept {
+  color: #84C870;
+}
+
+ul.notifications li button.reject {
+  color: #E55E5E;
+}

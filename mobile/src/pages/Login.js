@@ -34,8 +34,9 @@ export default function Login({ navigation }) {
   }
 
   return (
-    <KeyboardAvoidingView enabled={Platform.OS === 'ios'} behavior="padding" style={styles.container}>
-      <Image source={logo} />
+    <KeyboardAvoidingView behavior="padding" style={styles.container}>
+      
+      <Image source={logo} style={styles.logo} />
 
       <View>
         <Text style={styles.label}>SEU E-MAIL *</Text>
@@ -75,9 +76,16 @@ export default function Login({ navigation }) {
 const styles = StyleSheet.create({
   
   container: {
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    width: '90%',
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center'    
+  },
+
+  logo: {
+    marginBottom: 30,
   },
 
   form: {
@@ -88,21 +96,25 @@ const styles = StyleSheet.create({
   },
 
   label: {
+    width: '100%',
     fontWeight: 'bold',
     color: '#444',
     marginBottom: 8
   },
 
   input: {
+    width: '100%',
     borderWidth: 1,
     borderColor: '#ddd',
     fontSize: 16,
+    height: 45,
     paddingHorizontal: 20,
     marginBottom: 20,
     borderRadius: 2
   },
 
   button: {
+    width: '100%',
     height: 42,
     backgroundColor: '#f05a5b',
     justifyContent: 'center',

@@ -26,6 +26,7 @@ function SpotList({ tech, navigation }) {
 
   return (
     <View style={styles.container}>
+
       <Text style={styles.title}>Empresas que usam 
         <Text style={styles.bold}> {tech}</Text>
       </Text>
@@ -46,7 +47,7 @@ function SpotList({ tech, navigation }) {
               <Text styles={styles.buttonText}>Solicitar Reserva</Text>
             </TouchableOpacity>
           </View> 
-        )}
+        )} 
       />
     </View>
   )
